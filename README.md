@@ -38,8 +38,8 @@ PRs should be posted _before_ class begins on Tuesday, January 2, 2024.
 ### Interview Practice Questions
 
 1. What are three (3) syntax difference between HTML and JSX?
-
 2. What is yarn? What file(s) are modified when you run the command yarn in your terminal?
+Yarn is the backbone of React, used to install dependencies and run code automatically. Running Yarn installs dependencies-->
 
 3. What is the difference between state values and props in React?
 

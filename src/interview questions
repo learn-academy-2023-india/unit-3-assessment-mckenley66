@@ -1,0 +1,18 @@
+### Interview Practice Questions
+
+1. What are three (3) syntax difference between HTML and JSX?
+JSX is a extension for JavaScript that allows you to write HTML-like code.
+HTML is a markup language.
+JSX is a JavaScript approach to defining UI components.
+
+
+2. What is yarn? What file(s) are modified when you run the command yarn in your terminal? 
+Yarn is a package manager for JavaScript.
+It changes your 'package.json' file.
+
+ 3. What is the difference between state values and props in React?
+
+State is an internal data storage mechanism.
+Props are used to pass data from a parent component to a child component.
+
+
