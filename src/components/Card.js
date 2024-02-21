@@ -1,9 +1,9 @@
 import React from "react"
 
-const Card = ({hand}) => {
+const Card = ({props}) => {
   return (
     <div className="handStyles">
-      {hand.map((card, index) => {
+      {props.hand.map((card, index) => {
         return (
           <div className="cardStyles" key={index}>
             {card}
@@ -11,7 +11,7 @@ const Card = ({hand}) => {
         )
       })}
     </div>
-  )
-}
+  );
+};
 
 export default Card;

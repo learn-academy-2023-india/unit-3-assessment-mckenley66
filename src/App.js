@@ -22,28 +22,35 @@ const App = () => {
   const [hand, setHand] = useState([])
 
   const drawCard = () => {
-    // 1)create draw card function 
+    // 1)This function generates a random card by selecting a rank and a suit using Math methods. 
     const draw = `${rank[Math.floor(Math.random() * rank.length)]} ${
       suit[Math.floor(Math.random() * suit.length)]
     }`
-    // 2)select random elements from the array 
+    // 2)The conditional statement checks if the drawn card is not already present in the hand.
+
     if (hand.indexOf(draw) === -1) {
-      // 3)checks to see if an card can be added to the hand 
+      // 3)This ensures that only unique cards are added to the hand to prevent duplicates.
+    
       setHand([...hand, draw])
-      // 4)updates the hand and adds new card to the end of array
+      // 4)The hand is updated with the newly drawn card using the spread operator to maintain previous card information.
+    
     } else if (hand.length !== 52) {
-      // 5)checks to see if anymore cards can be drawn
+      // 5) If not all 52 cards have been dealt, the drawCard function is called recursively.
+   
       drawCard()
-      // 6)draw card until hand is full
+      // 6)his handles the scenario when all other conditions are false, ensuring proper flow control.
+   
     } else {
-      // 7)no more cards can be dealt
+      // 7)n alert is triggered to notify the user when all 52 cards have been dealt.
+     
       alert("All cards have been dealt.")
     }
   }
   // No need to change anything ABOVE this line ^
 
-  const shuffle = () => {}
-    setHand([]);
+  const shuffle = () => {
+    setHand([])
+  }
   return (
     <div>
       <h1>Draw a Card</h1>
